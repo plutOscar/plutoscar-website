@@ -1,0 +1,23 @@
+:root {
+    --bg: #070b14;
+    --bg-soft: #0b1220;
+    --surface: #101a2b;
+    --surface-raised: #142238;
+    --blue: #3478f6;
+    --blue-dark: #1d4ed8;
+    --blue-light: #75b7ff;
+    --blue-pale: #b9dcff;
+    --text: #f5f8ff;
+    --muted: #aab8cc;
+    --muted-2: #7e8da4;
+    --line: rgba(148, 177, 216, 0.16);
+    --line-strong: rgba(117, 183, 255, 0.38);
+    --content-width: 1160px;
+    --header-height: 82px;
+    --radius: 18px;
+    --shadow-blue: 0 18px 70px rgba(37, 99, 235, 0.16);
+}
+body{
+    margin: 0;
+
+}
