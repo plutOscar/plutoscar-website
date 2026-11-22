@@ -1,0 +1,17 @@
+PLUTOSCAR deployment notes
+
+CONTACT FORM
+- Contact form submissions are routed through FormSubmit to zubairubalahisham@gmail.com.
+- On the first live form submission, FormSubmit sends an activation email to that inbox. Open it and click the activation link. Until activation is completed, enquiries will not be delivered as normal.
+- Test the form after activation with a test message.
+- FormSubmit is a third-party processor. The form tells visitors not to submit sensitive information.
+
+HOSTING
+- This is a static HTML/CSS/JavaScript site.
+- Render Static Site deployment normally connects to a Git repository. Publish directory: PLUTOSCAR-MultiPage-Preview (or the repository root if you upload the contents of this folder directly).
+- No build command is required.
+- Enable HTTPS (Render provides managed TLS for hosted sites).
+
+PRIVACY / PUBLIC CONTACT
+- Before making the site public, check that any phone number shown is a dedicated business contact number and that a parent/guardian approves public display.
+- Do not publish private home address, school timetable, personal documents, or private student information.
