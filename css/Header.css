@@ -22,3 +22,118 @@
 .mobile-nav.open { display: grid; }
 .mobile-nav a { padding: 12px; border-radius: 9px; color: var(--muted); font-weight: 700; }
 .mobile-nav a:hover, .mobile-nav a[aria-current="page"] { background: rgba(155,131,200,.17); color: #fff; }
+
+
+/* Responsive header: keep the mobile top bar uncluttered */
+@media (max-width: 920px) {
+  .header-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-block: 10px;
+  }
+  .desktop-nav,
+  .header-inner > .site-search {
+    display: none !important;
+  }
+  .brand {
+    min-width: 0;
+    max-width: calc(100% - 58px);
+    flex: 0 1 auto;
+    gap: 9px;
+  }
+  .brand-mark {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+  }
+  .brand-copy {
+    min-width: 0;
+  }
+  .brand-name,
+  .brand-tagline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .menu-toggle {
+    display: block !important;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .mobile-nav {
+    display: none;
+    width: min(var(--content-width), calc(100% - 32px));
+    margin: 0 auto 14px;
+    padding: 10px;
+    gap: 3px;
+  }
+  .mobile-nav.open {
+    display: grid;
+  }
+  .mobile-nav a {
+    display: block;
+    padding: 12px 13px;
+  }
+  .mobile-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    margin-top: 8px;
+    overflow: hidden;
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    background: rgba(255,255,255,.04);
+  }
+  .mobile-search input {
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    padding: 0 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+  }
+  .mobile-search input::placeholder {
+    color: var(--muted-2);
+  }
+  .mobile-search button {
+    display: grid;
+    place-items: center;
+    flex: 0 0 44px;
+    align-self: stretch;
+    border: 0;
+    background: rgba(155,131,200,.20);
+    color: var(--blue-light);
+    cursor: pointer;
+  }
+  .mobile-search svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+}
+@media (min-width: 921px) {
+  .mobile-nav {
+    display: none !important;
+  }
+  .menu-toggle {
+    display: none !important;
+  }
+  .mobile-search {
+    display: none !important;
+  }
+}
